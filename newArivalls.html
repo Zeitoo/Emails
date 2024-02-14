@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Arrivals</title>
+    <style>
+
+        * {
+            padding: 0;
+        }
+
+        .btn {
+          
+            border: none;
+            width: 80%;
+            border-radius: 6px;
+            padding: 10px 0px;
+        }
+        .btn-white {
+            background-color: white;
+            color: black;
+        }
+
+        .btn-dark {
+            background-color: rgb(18, 18, 18);
+            color: rgb(233, 233, 233);
+        }
+
+
+        body {
+            padding: 100px;
+            display: flex;
+            justify-content: center;
+
+        }
+        body>div {
+            width: 500px;
+            border: 1px solid black;
+        }
+
+        img {
+            width: 100px;
+        }
+
+        header {
+            font-weight: bold;
+            font-size: 0.65em;
+        }
+
+        header .logo-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            translate: -20px;
+        }
+
+        .grid-section {
+            color: white;
+            padding: 20px;
+            background-color: rgb(15, 15, 16);
+        }
+
+        main h2,
+        main>p {
+            text-align: center;
+        }
+
+        .grid-section {
+            
+
+        }
+
+        .products-grid-wrapper {
+            text-align: center;
+            display: grid;
+            gap: 20px;
+                grid-template-columns: 1fr 1fr;
+                
+        }
+
+        .products-grid-wrapper img {
+            width: 100%;
+        }
+
+        .grid-second-section {
+            text-align: center;
+        }
+
+
+        .grid-second-section .curling-iron>img {
+            width: 100%;
+        }
+
+        .grid-second-section .sub-grid {
+            row-gap: 25px;
+            padding: 20px;
+            display: grid;
+                grid-template-columns: 1fr 1fr;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 20px 25px;
+            font-size: 0.7em;
+            color: white;
+            background-color: black;
+        }
+
+
+        footer li {
+            margin: 5px 0px;
+            list-style: none;
+        }
+
+        footer .rights {
+            text-align: end;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="email-content">
+        
+    <header>
+        <div class="logo-group">
+            <img src="logo.png" alt="Company-logo">
+            <h1>ElectroMart</h1>
+
+        </div>
+    </header>
+
+    <main>
+        <h2>New arrivals this season</h2>
+
+        <p>Discover the latest additions to our store.</p>
+
+       <section class="grid-section">
+        <div class="products-grid-wrapper">
+            <div class="product-1">
+                <img src="https://cdn.shopify.com/s/files/1/0633/2186/6445/files/H08e0a5eee642408a9cd36ce904a36efdK.webp?v=1707144993" class="product-image" alt="product-image">
+                <p>Mornwell Portable Oral Irrigator</p>
+            </div>
+            <div class="product-2">
+                <img src="https://cdn.shopify.com/s/files/1/0633/2186/6445/files/Hb7e0ea8c2b9f469ea3f6e8fd6c3b35efc.webp?v=1707145012" class="product-image" alt="product-image">
+                <p>Automatic Bottle Opener</p>
+            </div>
+            <div class="product-3">
+                <img src="https://cdn.shopify.com/s/files/1/0633/2186/6445/files/S9db7c07ce77f417cbb0da49c93854796W.webp?v=1707144980" class="product-image" alt="product-image">
+                <p>Ultrasonic Dental Scaler Dental for Xiomi</p>
+            </div>
+            <div class="product-4">
+                <img src="https://cdn.shopify.com/s/files/1/0633/2186/6445/files/Curling_iron.jpg?v=1707914623" class="product-image" alt="product-image">
+                <p>Multifunctional USB curling iron</p>
+            </div>
+        </div>
+        <button class="btn btn-white">Shop arrivals</button>
+       </section>
+       <section class="grid-second-section">
+            <div class="curling-iron">
+                <h3>Currently loving</h3>
+                <img src="https://cdn.shopify.com/s/files/1/0633/2186/6445/files/Hb7e0ea8c2b9f469ea3f6e8fd6c3b35efc.webp?v=1707145012" alt="Bottle Opener">
+                <p>Automatic Bottle Opener</p>
+            </div>
+
+            <div class="sub-grid">
+                <div class="grid1">
+                        <img src="https://cdn.shopify.com/s/files/1/0633/2186/6445/files/H08e0a5eee642408a9cd36ce904a36efdK.webp?v=1707144993" alt="">
+                        <p>Mornwell Portable Oral Irrigator</p>
+                </div>
+                <div class="grid2">
+                        <img src="https://cdn.shopify.com/s/files/1/0633/2186/6445/files/S9db7c07ce77f417cbb0da49c93854796W.webp?v=1707144980" alt="">
+                        <p>Ultrasonic Dental Scaler Dental for Xiomi</p>
+                </div>
+                <div class="grid3">
+                        <img src="https://cdn.shopify.com/s/files/1/0633/2186/6445/files/S89f8c0d26b5841b7971c0fca538bbb4ag.webp?v=1707142034" alt="">
+                        <p>Mornwell T37 Electric Toothbrush Rotation</p>
+
+                </div>
+            </div>
+
+            <button class="btn btn-dark">Browse more</button>
+       </section>
+    </main>
+
+    <footer>
+        <address>
+            <ul>
+                <li class="bold">ElectroMart</li>
+                <li>3669 Aspen Way Vlg #APT C</li>
+                <li>Santa Ana CA 92704</li>
+                <li>United States</li>          
+            </ul>
+        </address>
+
+        <hr>
+        <p class="rights">© 2024 ElectroMart</p>
+    </footer>
+    </div>
+</body>
+</html>
